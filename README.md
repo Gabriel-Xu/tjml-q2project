@@ -29,12 +29,8 @@ This repository contains code, data, and documentation for our research project 
 
 ## Project Details
 
-- **Problem:** Manually tuning hyperparameters is inefficient. Our project uses Bayesian Optimization for this task and further optimizes its settings automatically.
-- **Methods:** We compare three methods:
-  1. Baseline Random Forest with manual tuning.
-  2. Random Forest tuned with standard Bayesian Optimization.
-  3. Meta-optimized Bayesian Optimization that tunes its own hyperparameters.
-- **Results:** Our meta-optimized approach achieves similar accuracy and precision to standard Bayesian Optimization but with a significant reduction in execution time.
+- **Abstract:**
+- Finding optimal hyperparameters is crucial for machine learning models, yet it is both challenging and time-consuming. Traditional approaches, such as manual hyperparameter selection and grid search, rely heavily on trial and error and often produce inconsistent results. Bayesian Optimization has been proposed as a more efficient alternative, which leverages a probabilistic surrogate model to help guide hyperparameter selection. Nevertheless, existing approaches rely on the manual selection of Bayesian Optimization's hyperparameters itself, and such selection can introduce bias and cause inefficiencies. This study presents a novel approach that meta-optimizes the Bayesian Optimization process, allowing it to tune its own hyperparameters while optimizing the Random Forest Classifier. We apply this method to the breast-cancer.csv dataset from Weka. We compare three models: (1) a baseline Random Forest with manually chosen hyperparameters, (2) a Bayesian-optimized Random Forest with predefined settings, and (3) our meta-optimized approach, where Bayesian Optimization itself is tuned recursively. Performance is evaluated based on classification accuracy, precision, recall, training time, and confusion matrices. Preliminary results indicate that meta-optimization improves classification accuracy and reduces hyperparameter search time. Our findings suggest that automating Bayesian Optimization settings can enhance the performance and efficiency of machine learning classifiers. Future work may explore applying this approach to other machine learning models and different datasets.
 
 ## How to Run
 
