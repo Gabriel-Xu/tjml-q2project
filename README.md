@@ -16,15 +16,6 @@
 ## Project Overview
 This project implements a meta-optimized approach to Bayesian Optimization for tuning hyperparameters of a Random Forest Classifier. Our method recursively tunes the hyperparameters of the Bayesian Optimization algorithm itself, resulting in improved classification accuracy and reduced hyperparameter search time compared to conventional methods. The approach is demonstrated on the breast-cancer dataset from Weka, and performance is evaluated based on accuracy, precision, recall, training time, and confusion matrices.
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Data](#data)
-- [Experiments and Results](#experiments-and-results)
-- [Contributions](#contributions)
-- [References](#references)
-- [License](#license)
 
 ## Installation
 1. **Clone the repository:**
@@ -49,7 +40,7 @@ This project implements a meta-optimized approach to Bayesian Optimization for t
 ## Usage
 1. **Prepare the Dataset:**
    - The project uses the `breast-cancer.csv` dataset from Weka. Ensure the dataset is placed in the `data/` directory (or update the path in the code accordingly).
-   - If necessary, convert categorical variables using one-hot encoding as outlined in the project documentation.
+   - If necessary, convert categorical variables using one-hot encoding.
 
 2. **Run the Baseline Model:**
    - Execute the script for the baseline Random Forest model:
@@ -94,7 +85,7 @@ Three models are compared:
 | Bayesian Optimization              | 33.59         | 0.7586   | 0.8333    | 0.4545 |
 | Meta-Optimized Bayesian Optimization | 20.97         | 0.7586   | 0.8333    | 0.4545 |
 
-Confusion matrices for each model are provided in the project documentation.
+Confusion matrices for each model are provided in the project paper.
 
 ## Contributions
 - **Abstract:** Andrew
@@ -116,11 +107,6 @@ Confusion matrices for each model are provided in the project documentation.
 7. Frank, E., Hall, M. A., & Witten, I. H. (2016). *The WEKA Workbench*. In _Data Mining: Practical Machine Learning Tools and Techniques_ (4th ed.).
 8. Zwitter, M. & Soklic, M. (1988). *Breast Cancer [Dataset]*. [UCI Machine Learning Repository](https://doi.org/10.24432/C51P4M).
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+
 
 ```
-
----
-
-Simply copy the above text into your README.md file. Modify any sections (e.g., repository URL, file names, or dependency details) as needed to match your project setup.
