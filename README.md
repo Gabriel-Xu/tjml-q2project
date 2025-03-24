@@ -2,7 +2,6 @@
 
 # Time-Optimized Bayesian Optimization of Random Forest Hyperparameters
 
-```markdown
 # Time-Optimized Bayesian Optimization of Random Forest Hyperparameters
 
 ## Project Overview
@@ -32,4 +31,3 @@ This project implements a meta-optimized approach to Bayesian Optimization for t
 
 5. **View Results:**
    - Check the console output for performance metrics (accuracy, precision, recall, runtime) and confusion matrices.
-```
